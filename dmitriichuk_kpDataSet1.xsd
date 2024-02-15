@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dmitriichuk_kpDataSet1" targetNamespace="http://tempuri.org/dmitriichuk_kpDataSet1.xsd" xmlns:mstns="http://tempuri.org/dmitriichuk_kpDataSet1.xsd" xmlns="http://tempuri.org/dmitriichuk_kpDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dmitriichuk_kpConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dmitriichuk_kpConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.dmitriichuk_kpConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Patients_SurName_SerP_NumPTableAdapter" GeneratorDataComponentClassName="Patients_SurName_SerP_NumPTableAdapter" Name="Patients_SurName_SerP_NumP" UserDataComponentName="Patients_SurName_SerP_NumPTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dmitriichuk_kpConnectionString (Settings)" DbObjectName="dmitriichuk_kp.dbo.Patients_SurName_SerP_NumP" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT patientInfo FROM dbo.Patients_SurName_SerP_NumP</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="patientInfo" DataSetColumn="patientInfo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dmitriichuk_kpDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="dmitriichuk_kpDataSet1" msprop:Generator_DataSetName="dmitriichuk_kpDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Patients_SurName_SerP_NumP" msprop:Generator_RowEvHandlerName="Patients_SurName_SerP_NumPRowChangeEventHandler" msprop:Generator_RowDeletedName="Patients_SurName_SerP_NumPRowDeleted" msprop:Generator_RowDeletingName="Patients_SurName_SerP_NumPRowDeleting" msprop:Generator_RowEvArgName="Patients_SurName_SerP_NumPRowChangeEvent" msprop:Generator_TablePropName="Patients_SurName_SerP_NumP" msprop:Generator_RowChangedName="Patients_SurName_SerP_NumPRowChanged" msprop:Generator_RowChangingName="Patients_SurName_SerP_NumPRowChanging" msprop:Generator_TableClassName="Patients_SurName_SerP_NumPDataTable" msprop:Generator_RowClassName="Patients_SurName_SerP_NumPRow" msprop:Generator_TableVarName="tablePatients_SurName_SerP_NumP" msprop:Generator_UserTableName="Patients_SurName_SerP_NumP">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="patientInfo" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="patientInfo" msprop:Generator_ColumnPropNameInTable="patientInfoColumn" msprop:Generator_ColumnVarNameInTable="columnpatientInfo" msprop:Generator_UserColumnName="patientInfo" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

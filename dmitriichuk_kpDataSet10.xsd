@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dmitriichuk_kpDataSet10" targetNamespace="http://tempuri.org/dmitriichuk_kpDataSet10.xsd" xmlns:mstns="http://tempuri.org/dmitriichuk_kpDataSet10.xsd" xmlns="http://tempuri.org/dmitriichuk_kpDataSet10.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dmitriichuk_kpConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dmitriichuk_kpConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.dmitriichuk_kpConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Raschet_skidkiTableAdapter" GeneratorDataComponentClassName="Raschet_skidkiTableAdapter" Name="Raschet_skidki" UserDataComponentName="Raschet_skidkiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dmitriichuk_kpConnectionString (Settings)" DbObjectName="dmitriichuk_kp.dbo.Raschet_skidki" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Номер_паспорта, Контингент, Скидка FROM dbo.Raschet_skidki</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Номер_паспорта" DataSetColumn="Номер_паспорта" />
+              <Mapping SourceColumn="Контингент" DataSetColumn="Контингент" />
+              <Mapping SourceColumn="Скидка" DataSetColumn="Скидка" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dmitriichuk_kpDataSet10" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="dmitriichuk_kpDataSet10" msprop:Generator_DataSetName="dmitriichuk_kpDataSet10">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Raschet_skidki" msprop:Generator_RowEvHandlerName="Raschet_skidkiRowChangeEventHandler" msprop:Generator_RowDeletedName="Raschet_skidkiRowDeleted" msprop:Generator_RowDeletingName="Raschet_skidkiRowDeleting" msprop:Generator_RowEvArgName="Raschet_skidkiRowChangeEvent" msprop:Generator_TablePropName="Raschet_skidki" msprop:Generator_RowChangedName="Raschet_skidkiRowChanged" msprop:Generator_RowChangingName="Raschet_skidkiRowChanging" msprop:Generator_TableClassName="Raschet_skidkiDataTable" msprop:Generator_RowClassName="Raschet_skidkiRow" msprop:Generator_TableVarName="tableRaschet_skidki" msprop:Generator_UserTableName="Raschet_skidki">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Номер_паспорта" msprop:Generator_ColumnPropNameInRow="Номер_паспорта" msprop:Generator_ColumnPropNameInTable="Номер_паспортаColumn" msprop:Generator_ColumnVarNameInTable="columnНомер_паспорта" msprop:Generator_UserColumnName="Номер_паспорта">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Контингент" msprop:Generator_ColumnPropNameInRow="Контингент" msprop:Generator_ColumnPropNameInTable="КонтингентColumn" msprop:Generator_ColumnVarNameInTable="columnКонтингент" msprop:Generator_UserColumnName="Контингент" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Скидка" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="Скидка" msprop:Generator_ColumnPropNameInTable="СкидкаColumn" msprop:Generator_ColumnVarNameInTable="columnСкидка" msprop:Generator_UserColumnName="Скидка" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
